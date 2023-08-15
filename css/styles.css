@@ -214,7 +214,6 @@ address {
 }
 /* -------Advantage------- */
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -237,7 +236,7 @@ address {
   gap: 72px;
 }
 .advantage-iteam-top {
-display: none;
+  display: none;
 }
 .advantage-subtitle {
   margin-bottom: 8px;
@@ -262,52 +261,54 @@ display: none;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;}
+    max-width: 768px;
+  }
   .advantage-iteam {
     width: calc((100% - 24px) / 2);
   }
   .advantage-list {
-    gap: 72px 24px ;
-}
-.advantage-subtitle {
-  text-align: left;
-}
+    gap: 72px 24px;
+  }
+  .advantage-subtitle {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;}
+    max-width: 1158px;
+  }
   .advantage-iteam {
     width: calc((100% - 72px) / 4);
   }
   .advantage-list {
-    gap:24px ;
-}
-.advantage-subtitle {
-  text-align: left;
-  font-weight: 500;
-  line-height:1.2;
-  font-size: 20px;
-}
-.advantage-iteam-top {
-  border-radius: 4px;
-  background-color: var(--color-cloud);
-  width: 100%;
-  height: 112px;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.advantage-text {
-  font-weight: 400;
-}
-.advantage {
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
+    gap: 24px;
+  }
+  .advantage-subtitle {
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px;
+  }
+  .advantage-iteam-top {
+    border-radius: 4px;
+    background-color: var(--color-cloud);
+    width: 100%;
+    height: 112px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantage-text {
+    font-weight: 400;
+  }
+  .advantage {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
 }
 /* ----------------Working----------- */
-@media  screen and (max-width:1157px) {
+@media screen and (max-width: 1157px) {
   .working {
     display: none;
   }
@@ -344,7 +345,6 @@ display: none;
 .list-social {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 32px;
   padding: 0 16px;
 }
 .team-social-link {
@@ -369,9 +369,6 @@ display: none;
   background-color: var(--color-cloud);
 }
 .container-team {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -387,7 +384,7 @@ display: none;
 
 .team-iteam {
   background-color: var(--color-white);
-  width: 264px;
+  width: 100;
   background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -420,10 +417,37 @@ display: none;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+@media screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
+  .team-iteam {
+    width: calc((100% - 24px) / 2);
+  }
+  .team-title {
+    margin-bottom: 72px;
+  }
+}
+.team-container {
+  max-width: 584px;
+}
+@media screen and (min-width: 1158px) {
+  .team-container {
+    max-width: 1158px;
+  }
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  .team-iteam {
+    width: calc((100% - 72px) / 4);
+  }
+}
 /*-------------------------- customers------------------*/
 .customers {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .customers-tiatle {
@@ -437,10 +461,11 @@ display: none;
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customers-link {
@@ -463,6 +488,33 @@ display: none;
 .customers-icon {
   fill: currentColor;
 }
+@media screen and (min-width: 768px) {
+  .customers-conteinet {
+    max-width: 584px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .customers-conteinet {
+    max-width:1158px;
+  }
+  .customers {
+    padding: 120px 0;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+}
+
 /* ----------------------------FOOTER------------------ */
 .main-footer {
   background-color: var(--color-navy-blue);
