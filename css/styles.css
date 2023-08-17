@@ -76,7 +76,6 @@ address {
 .header-container {
   display: flex;
   align-items: center;
- 
 }
 .header-navi {
   display: flex;
@@ -167,7 +166,7 @@ address {
 }
 
 .menu-open-btn {
-  margin-left:auto;
+  margin-left: auto;
   border: none;
   background-color: transparent;
 }
@@ -235,12 +234,13 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  transition-property: color , font-weight , font-size;
-  transition-duration: 250ms , 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) , cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, font-weight, font-size;
+  transition-duration: 250ms, 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-header-address-item:not(:last-child) {
- margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .mob-header-address-link:hover,
 .mob-header-address-link:focus,
@@ -255,7 +255,8 @@ address {
   gap: 24px;
 }
 
-.mob-icon { fill: var(--color-cloud);
+.mob-icon {
+  fill: var(--color-cloud);
 }
 .mob-social-link {
   display: flex;
@@ -272,8 +273,6 @@ address {
 .mob-social-link:focus {
   background-color: var(--color-ocean);
 }
-
-
 
 /*----------- HERO------------ */
 .hero {
@@ -488,7 +487,6 @@ address {
   letter-spacing: 0.02em;
 }
 
-
 /*-------------------------- customers------------------*/
 .customers {
   padding: 96px 0;
@@ -593,21 +591,15 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 100%;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 264px;
-  margin-right: 16px;
-}
-
-.footer-social-conteiner {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .footer-social-list {
   display: flex;
   gap: 16px;
   padding: 0;
+  justify-content: center;
 }
 .footer-social-item {
   width: 40px;
@@ -626,19 +618,12 @@ address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--color-green);
 }
 .footer-icon {
   fill: var(--color-cloud);
-}
-
-.footer-subscribe {
-display: flex;
-flex-direction: column;
-align-items: center;
 }
 
 .footer-subscribe-text {
@@ -648,9 +633,16 @@ align-items: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  text-align: center;
 }
+.footer-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .footer-input {
-  margin-bottom: 16px;
   color: var(--color-white);
   padding-left: 16px;
   padding-right: 16px;
@@ -676,7 +668,6 @@ align-items: center;
 }
 
 .footer-btn {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,8 +694,6 @@ align-items: center;
   fill: var(--color-white);
   margin-left: 16px;
 }
-
-
 
 /*----------- Portfolio header ----------*/
 
@@ -754,6 +743,7 @@ align-items: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 .portfolio-filter {
   padding-top: 96px;
