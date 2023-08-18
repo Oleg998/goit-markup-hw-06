@@ -745,15 +745,21 @@ address {
   margin-bottom: 16px;
   text-align: center;
 }
+
+.portfolio-filter {
+  width: 396px;
+  margin: 0 auto;
+}
 .portfolio-filter {
   padding-top: 48px;
   padding-bottom: 48px;
+  
 }
 .filter-list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 24px;
-  justify-content: baseline;
+  justify-content: flex-start;
   margin-bottom: 48px;
 }
 
@@ -797,7 +803,6 @@ address {
 .portfolio-iteam {
   border: 1px solid var(--color-cornflower);
   border-top: none;
-  width: 396px;
 }
 
 .portfolio-img-list {

@@ -93,6 +93,11 @@
     padding-top: 64px;
     padding-bottom: 96px;
   }
+  .filter-btn {padding: 12px 24px;}
+
+  .portfolio-filter {
+    width:inherit; 
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -218,4 +223,5 @@
   .portfolio-iteam {
     width: calc((100% - 48px) / 3);
   }
+  
 }
