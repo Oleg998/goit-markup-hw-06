@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="./css/styles.css"
     />
+    <link rel="stylesheet" href="./css/media.css">
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -80,6 +81,141 @@
             </li>
           </ul>
         </address>
+        <button
+        type="button"
+        class="menu-open-btn js-open-menu"
+      >
+        <svg
+          width="32"
+          height="22"
+        >
+          <use href="./images/icons.svg#icon-icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mob-menu js-menu-container">
+      <button class="mob-menu-close-btn js-close-menu">
+        <svg
+          class="mob-close-icon"
+          width="8"
+          height="8"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-header-menu-list list">
+        <li class="mon-header-menu-item">
+          <a
+            class="mob-header-menu-link link"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li class="mon-header-menu-item">
+          <a
+            class="mob-header-menu-link link"
+            href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mon-header-menu-item">
+          <a
+            class="mob-header-menu-link link"
+            href=""
+            >Contacts</a
+          >
+        </li>
+      </ul>
+        <div class="mob-conteiner">
+          <address class="mob-header-address">
+            <ul class="mob-header-address-list list">
+              <li class="mob-header-address-item">
+                <a
+                  class="mob-header-address-link link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-header-address-item">
+                <a
+                  class="mob-header-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-social-list list">
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  class="mob-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  class="mob-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  class="mob-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  class="mob-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>  
+
+
       </div>
     </header>
     <main>
@@ -87,7 +223,7 @@
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
           <ul class="filter-list list">
-            <li>
+            <li class="filter-item">
               <button
                 type="button"
                 class="filter-btn"
@@ -95,7 +231,7 @@
                 All
               </button>
             </li>
-            <li>
+            <li class="filter-item" >
               <button
                 type="button"
                 class="filter-btn"
@@ -103,7 +239,7 @@
                 Web Site
               </button>
             </li>
-            <li>
+            <li class="filter-item">
               <button
                 type="button"
                 class="filter-btn"
@@ -111,7 +247,7 @@
                 App
               </button>
             </li>
-            <li>
+            <li class="filter-item" >
               <button
                 type="button"
                 class="filter-btn"
@@ -119,7 +255,7 @@
                 Design
               </button>
             </li>
-            <li>
+            <li class="filter-item" >
               <button
                 type="button"
                 class="filter-btn"
@@ -135,14 +271,18 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+                  <picture>
+                    <source srcset="./images/portfolio1.jpg 1x , ./images/portfolio1-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab1-x1.jpg 1x , ./images/port-tab1-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob1-x1.jpg , ./images/port-mob1-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio1.jpg"
                     alt="Banking App Interface Concept"
-                    width="360"
-                    height="300"
-                  />
-
+                    width="396"
+                     />
+                  </picture>
+                  
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -163,13 +303,18 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+
+                  <picture>
+                    <source srcset="./images/portfolio2.jpg 1x , ./images/portfolio2-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab2-x1.jpg 1x , ./images/port-tab2-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob2-x1.jpg , ./images/port-mob2-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio2.jpg"
                     alt="Cashless Payment"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture>                  
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -189,13 +334,18 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+
+                  <picture>
+                    <source srcset="./images/portfolio3.jpg 1x , ./images/portfolio3-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab3-x1.jpg 1x , ./images/port-tab3-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob3-x1.jpg , ./images/port-mob3-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio3.jpg"
                     alt="Meditation App"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture>                  
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -215,14 +365,18 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+
+                  <picture>
+                    <source srcset="./images/portfolio4.jpg 1x , ./images/portfolio4-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab4-x1.jpg 1x , ./images/port-tab4-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob4-x1.jpg , ./images/port-mob4-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio4.jpg"
                     alt="Taxi Service"
-                    width="360"
-                    height="300"
-                  />
-
+                    width="396"
+                     />
+                  </picture>                 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -241,13 +395,21 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+                   
+                  <picture>
+                    <source srcset="./images/portfolio5.jpg 1x , ./images/portfolio5-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab5-x1.jpg 1x , ./images/port-tab5-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob5-x1.jpg , ./images/port-mob5-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio5.jpg"
                     alt="Screen Illustrations"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture> 
+
+
+                  
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -267,13 +429,20 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+                  <picture>
+                    <source srcset="./images/portfolio6.jpg 1x , ./images/portfolio6-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab6-x1.jpg 1x , ./images/port-tab6-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob6-x1.jpg , ./images/port-mob6-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio6.jpg"
                     alt="Online Courses"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture> 
+
+
+                 
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -293,13 +462,21 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+
+                  <picture>
+                    <source srcset="./images/portfolio7.jpg 1x , ./images/portfolio7-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab7-x1.jpg 1x , ./images/port-tab7-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob7-x1.jpg , ./images/port-mob7-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio7.jpg"
                     alt="Instagram Stories Concept"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture>  
+
+
+                 
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -319,13 +496,20 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+
+                  <picture>
+                    <source srcset="./images/portfolio8.jpg 1x , ./images/portfolio8-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab8-x1.jpg 1x , ./images/port-tab8-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob8-x1.jpg , ./images/port-mob8-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio8.jpg"
                     alt="Organic Food"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture>  
+
+                 
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -345,13 +529,19 @@
                 href=""
               >
                 <div class="portfolio-cover-father">
-                  <img
+                  <picture>
+                    <source srcset="./images/portfolio9.jpg 1x , ./images/portfolio9-x2.jpg 2x" media="(min-width:1158px)">
+                    <source srcset="./images/port-tab9-x1.jpg 1x , ./images/port-tab9-x2.jpg 2x" media="(min-width:768px )">
+                    <source srcset="./images/port-mob9-x1.jpg , ./images/port-mob9-x2.jpg 2x" media="(max-width:768px )">            
+                    <img
                     class="portfolio-img"
                     src="./images/portfolio9.jpg"
                     alt="Fresh Coffee"
-                    width="360"
-                    height="300"
-                  />
+                    width="396"
+                     />
+                  </picture>  
+
+                
 
                   <p class="portfolio-cover-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -482,5 +672,15 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="./js/mobile-menu.js"
+    ></script>
   </body>
 </html>

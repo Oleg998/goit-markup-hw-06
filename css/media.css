@@ -81,6 +81,18 @@
   .footer-subscribe-text {
     text-align: unset;
   }
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 64px;
+    gap: 24px;
+  }
+  .portfolio-iteam {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio-filter {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -191,5 +203,19 @@
   }
   .footer-form {
     margin-right: auto;
+  }
+
+  .filter-list {
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  
+  .portfolio-filter {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .portfolio-iteam {
+    width: calc((100% - 48px) / 3);
   }
 }
