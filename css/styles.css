@@ -385,6 +385,7 @@ address {
 .working-list {
   display: flex;
   gap: 24px;
+  padding: 20px;
 }
 .working {
   padding-bottom: 120px;

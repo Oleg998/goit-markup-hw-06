@@ -168,7 +168,7 @@
     flex-wrap: nowrap;
   }
   .team-iteam {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 40px) / 4);
   }
   .team {
     padding: 120px 0;
